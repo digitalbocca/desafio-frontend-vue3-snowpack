@@ -1,6 +1,6 @@
 <template lang="pug">
 .container#app
-  h1 Desafio Frontend
+  router-view
 </template>
 
 <script>
