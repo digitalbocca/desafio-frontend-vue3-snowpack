@@ -4,7 +4,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: '/'
+    src: '/',
+    // public: { url: '/', static: true, resolve: false }
   },
   plugins: [
     '@snowpack/plugin-vue',
