@@ -11,14 +11,18 @@
 <script>
 
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default {
   name: 'Home',
   setup () {
+    const router = useRouter()
+
     const username = ref('')
 
     const pesquisarUsername = () => {
-      alert(username.value)
+      router.push(`/perfil/${username.value}`)
+
       limparCampos()
     }
 
